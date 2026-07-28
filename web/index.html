@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomAutoPitcher - Editor Visual de Regras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="logo-area">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H6L9 4L15 20L18 12H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h1>CustomAutoPitcher <span class="badge">Rules Editor</span></h1>
+            </div>
+            <div class="actions-area">
+                <button id="btn-save" class="btn btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                    Salvar Alterações
+                </button>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT -->
+        <main class="app-layout">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Suas Regras</h2>
+                    <button id="btn-add-rule" class="btn btn-secondary btn-sm">
+                        <span>+ Nova Regra</span>
+                    </button>
+                </div>
+                <div class="rules-list-container">
+                    <ul id="rules-list" class="rules-list">
+                        <!-- Carregado via JS -->
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- EDITING AREA -->
+            <section class="editor-pane">
+                <div id="no-selection-msg" class="empty-state">
+                    <p>Selecione uma regra na barra lateral ou crie uma nova para começar a editar.</p>
+                </div>
+                <div id="editor-form-container" class="form-container hidden">
+                    <div class="form-section">
+                        <div class="form-group-row">
+                            <div class="form-group flex-2">
+                                <label for="rule-name">Nome da Regra</label>
+                                <input type="text" id="rule-name" placeholder="Ex: Início de Frase">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONDIÇÕES -->
+                    <div class="form-section">
+                        <h3>Condições</h3>
+                        <div class="grid-2">
+                            <!-- Silêncio Antes -->
+                            <div class="form-group check-card">
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="cond-ant-silencio">
+                                    <label for="cond-ant-silencio">Nota anterior é silêncio</label>
+                                </div>
+                            </div>
+                            <!-- Silêncio Depois -->
+                            <div class="form-group check-card">
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="cond-prox-silencio">
+                                    <label for="cond-prox-silencio">Próxima nota é silêncio</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FILTRO DE FONÉTICA (CORRIGIDO) -->
+                        <div class="form-group mt-3">
+                            <label>Filtrar por Tipo de Fonema (Opcional)</label>
+                            <div class="grid-3 mt-2" style="grid-template-columns: repeat(4, 1fr);">
+                                <div class="check-card" style="padding: 0.75rem;">
+                                    <div class="checkbox-row">
+                                        <input type="checkbox" id="ph-cv-plosivo" class="ph-checkbox" value="cv_plosivo">
+                                        <label for="ph-cv-plosivo" style="font-size: 0.85rem;">C Plosivo</label>
+                                    </div>
+                                </div>
+                                <div class="check-card" style="padding: 0.75rem;">
+                                    <div class="checkbox-row">
+                                        <input type="checkbox" id="ph-cv-suave" class="ph-checkbox" value="cv_nao_plosivo">
+                                        <label for="ph-cv-suave" style="font-size: 0.85rem;">C Suave</label>
+                                    </div>
+                                </div>
+                                <div class="check-card" style="padding: 0.75rem;">
+                                    <div class="checkbox-row">
+                                        <input type="checkbox" id="ph-vogal" class="ph-checkbox" value="vogal">
+                                        <label for="ph-vogal" style="font-size: 0.85rem;">Vogal / VV / +</label>
+                                    </div>
+                                </div>
+                                <div class="check-card" style="padding: 0.75rem;">
+                                    <div class="checkbox-row">
+                                        <input type="checkbox" id="ph-rest" class="ph-checkbox" value="rest">
+                                        <label for="ph-rest" style="font-size: 0.85rem;">Pausa (R)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">
+                                * Se todos forem desmarcados ou todos marcados, a regra será aplicada a qualquer fonema.
+                            </span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="slider-header">
+                                <label for="cond-length-min">Comprimento Mínimo da Nota</label>
+                                <span id="val-cond-length-min">0 ticks</span>
+                            </div>
+                            <input type="range" id="cond-length-min" min="0" max="1920" step="10" value="0">
+                            <div class="slider-ticks">
+                                <span>0 (Qualquer)</span>
+                                <span>240 (Colcheia)</span>
+                                <span>480 (Semínima)</span>
+                                <span>960 (Mínima)</span>
+                            </div>
+                        </div>
+
+                        <!-- Deltas de Pitch -->
+                        <div class="grid-2 mt-3" id="delta-anterior-container">
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="cond-delta-ant-min">Salto Anterior Mínimo</label>
+                                    <span id="val-cond-delta-ant-min">0 semitons</span>
+                                </div>
+                                <input type="range" id="cond-delta-ant-min" min="-36" max="36" step="1" value="-12">
+                            </div>
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="cond-delta-ant-max">Salto Anterior Máximo</label>
+                                    <span id="val-cond-delta-ant-max">0 semitons</span>
+                                </div>
+                                <input type="range" id="cond-delta-ant-max" min="-36" max="36" step="1" value="12">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="checkbox-row">
+                                <input type="checkbox" id="enable-delta-prox">
+                                <label for="enable-delta-prox">Filtrar por salto da próxima nota</label>
+                            </div>
+                        </div>
+                        <div class="grid-2 mt-2 hidden" id="delta-proxima-container">
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="cond-delta-prox-min">Salto Próximo Mínimo</label>
+                                    <span id="val-cond-delta-prox-min">0 semitons</span>
+                                </div>
+                                <input type="range" id="cond-delta-prox-min" min="-36" max="36" step="1" value="0">
+                            </div>
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="cond-delta-prox-max">Salto Próximo Máximo</label>
+                                    <span id="val-cond-delta-prox-max">0 semitons</span>
+                                </div>
+                                <input type="range" id="cond-delta-prox-max" min="-36" max="36" step="1" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EFEITOS -->
+                    <div class="form-section">
+                        <h3>Efeitos</h3>
+
+                        <!-- Portamento -->
+                        <div class="effect-card">
+                            <div class="effect-header">
+                                <h4>Portamento</h4>
+                                <label class="switch">
+                                    <input type="checkbox" id="effect-portamento-active">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+
+                            <div id="portamento-inputs" class="effect-body">
+                                <div class="form-group">
+                                    <label for="port-type">Tipo de Curva</label>
+                                    <select id="port-type">
+                                        <option value="fixo">Curva Fixa (Valores do JSON)</option>
+                                        <option value="proporcional">Proporcional (Ajusta baseado no salto)</option>
+                                    </select>
+                                </div>
+
+<div id="port-fixo-fields" class="mt-3">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+        <h5 style="margin: 0; font-size: 0.85rem; color: #94a3b8;">Pontos do Portamento (Tempo e Pitch)</h5>
+        <button type="button" id="btn-add-port-point" class="btn btn-secondary btn-sm" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">
+            + Adicionar Ponto
+        </button>
+    </div>
+    <!-- Container onde as linhas de pontos serão inseridas -->
+    <div id="port-points-container" style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 180px; overflow-y: auto; padding-right: 0.25rem;">
+        <!-- Inserido dinamicamente via JS -->
+    </div>
+    <div class="port-tip mt-2">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+            <strong>Edição Visual:</strong> Arraste os pontos diretamente no <strong>Live Visual Preview</strong> abaixo! Duplo-clique no espaço vazio para adicionar e sobre um ponto para removê-lo.
+        </div>
+    </div>
+</div>
+
+<div id="port-prop-fields" class="grid-3 mt-3 hidden">
+    <div class="form-group">
+        <div class="slider-header">
+            <label for="port-pbs-base">PBS Base</label>
+            <span id="val-port-pbs-base">-50 ms</span>
+        </div>
+        <input type="range" id="port-pbs-base" min="-200" max="0" step="5" value="-50">
+    </div>
+    <div class="form-group">
+        <label for="port-pbw-prop">PBW (Larguras)</label>
+        <input type="text" id="port-pbw-prop" value="45,25">
+    </div>
+    <div class="form-group">
+        <div class="slider-header">
+            <label for="port-fator-pby">Fator PBY</label>
+            <span id="val-port-fator-pby">-2.0x</span>
+        </div>
+        <input type="range" id="port-fator-pby" min="-5.0" max="5.0" step="0.1" value="-2.0">
+    </div>
+</div>
+
+                                <!-- Humanização do Portamento -->
+                                <div class="effect-sub-section">
+                                    <h5>Variações Orgânicas (Humanização)</h5>
+                                    <div class="grid-2 mt-2">
+                                        <div class="form-group">
+                                            <div class="slider-header">
+                                                <label for="port-rand-pbs">Var. Máx PBS</label>
+                                                <span id="val-port-rand-pbs">0 ms</span>
+                                            </div>
+                                            <input type="range" id="port-rand-pbs" min="0" max="100" step="1" value="0">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="slider-header">
+                                                <label for="port-rand-pbw">Var. Máx PBW</label>
+                                                <span id="val-port-rand-pbw">0 ms</span>
+                                            </div>
+                                            <input type="range" id="port-rand-pbw" min="0" max="100" step="1" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vibrato -->
+                        <div class="effect-card mt-3">
+                            <div class="effect-header">
+                                <h4>Vibrato</h4>
+                                <label class="switch">
+                                    <input type="checkbox" id="effect-vibrato-active">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+
+                            <div id="vibrato-inputs" class="effect-body">
+                                <div class="grid-2">
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-lg">Tamanho (%)</label>
+                                            <span id="val-vib-lg">60%</span>
+                                        </div>
+                                        <input type="range" id="vib-lg" min="0" max="100" value="60">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-period">Período (ms)</label>
+                                            <span id="val-vib-period">140ms</span>
+                                        </div>
+                                        <input type="range" id="vib-period" min="40" max="300" step="5" value="140">
+                                    </div>
+                                </div>
+
+                                <div class="grid-2 mt-3">
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-depth">Profundidade (cents)</label>
+                                            <span id="val-vib-depth">30 cents</span>
+                                        </div>
+                                        <input type="range" id="vib-depth" min="5" max="200" step="5" value="30">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-fade-in">Fade In (%)</label>
+                                            <span id="val-vib-fade-in">20%</span>
+                                        </div>
+                                        <input type="range" id="vib-fade-in" min="0" max="100" value="20">
+                                    </div>
+                                </div>
+
+                                <div class="grid-3 mt-3">
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-fade-out">Fade Out (%)</label>
+                                            <span id="val-vib-fade-out">5%</span>
+                                        </div>
+                                        <input type="range" id="vib-fade-out" min="0" max="100" value="5">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-phase">Fase (°)</label>
+                                            <span id="val-vib-phase">0°</span>
+                                        </div>
+                                        <input type="range" id="vib-phase" min="0" max="360" step="5" value="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="slider-header">
+                                            <label for="vib-offset">Offset (%)</label>
+                                            <span id="val-vib-offset">0%</span>
+                                        </div>
+                                        <input type="range" id="vib-offset" min="-100" max="100" step="5" value="0">
+                                    </div>
+                                </div>
+
+                                <!-- Humanização do Vibrato -->
+                                <div class="effect-sub-section">
+                                    <h5>Variações Orgânicas (Humanização)</h5>
+                                    <div class="grid-3 mt-2">
+                                        <div class="form-group">
+                                            <div class="slider-header">
+                                                <label for="vib-rand-depth">Var. Profundidade</label>
+                                                <span id="val-vib-rand-depth">0 cents</span>
+                                            </div>
+                                            <input type="range" id="vib-rand-depth" min="0" max="50" step="1" value="0">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="slider-header">
+                                                <label for="vib-rand-period">Var. Período</label>
+                                                <span id="val-vib-rand-period">0 ms</span>
+                                            </div>
+                                            <input type="range" id="vib-rand-period" min="0" max="50" step="1" value="0">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="slider-header">
+                                                <label for="vib-rand-length">Var. Tamanho</label>
+                                                <span id="val-vib-rand-length">0%</span>
+                                            </div>
+                                            <input type="range" id="vib-rand-length" min="0" max="30" step="1" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PREVIEW AREA -->
+                    <div class="preview-section mt-3">
+                        <div class="preview-header">
+                            <h2>Live Visual Preview</h2>
+                        </div>
+                        <div class="canvas-container">
+                            <canvas id="preview-canvas"></canvas>
+                        </div>
+                        <div class="preview-legend">
+                            <div class="legend-item"><span class="legend-color cyan"></span> Portamento</div>
+                            <div class="legend-item"><span class="legend-color purple"></span> Vibrato</div>
+                            <div class="legend-item"><span class="legend-color grey"></span> Pitch Alvo</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

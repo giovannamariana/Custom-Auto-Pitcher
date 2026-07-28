@@ -1,0 +1,1658 @@
+[
+  {
+    "nome": "N-1 (VV) N-2",
+    "condicoes": {
+      "delta_anterior_min": -1,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ],
+      "delta_proxima_min": -6,
+      "delta_proxima_max": -2
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -61,
+            "y": 16.8
+          },
+          {
+            "x": -48,
+            "y": 0.1
+          },
+          {
+            "x": -30,
+            "y": 0.1
+          },
+          {
+            "x": -22,
+            "y": -13.6
+          },
+          {
+            "x": -4,
+            "y": -13.5
+          },
+          {
+            "x": 3,
+            "y": 12
+          },
+          {
+            "x": 27,
+            "y": 12
+          },
+          {
+            "x": 30,
+            "y": -0.9
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 90,
+        "period": 95,
+        "depth": 25,
+        "fade_in": 37,
+        "fade_out": 15,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 5,
+        "rand_period": 20,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N1 (VV) N-2",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ],
+      "delta_proxima_min": -6,
+      "delta_proxima_max": -2
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -90,
+            "y": 0
+          },
+          {
+            "x": -86,
+            "y": 2
+          },
+          {
+            "x": -50,
+            "y": 2
+          },
+          {
+            "x": -46,
+            "y": -8.8
+          },
+          {
+            "x": 2,
+            "y": -8.7
+          },
+          {
+            "x": 10,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 90,
+        "period": 95,
+        "depth": 45,
+        "fade_in": 37,
+        "fade_out": 15,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 12,
+        "rand_period": 20,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N-1 (VV) N2",
+    "condicoes": {
+      "delta_anterior_min": -1,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ],
+      "delta_proxima_min": 2,
+      "delta_proxima_max": 6
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -90,
+            "y": 0
+          },
+          {
+            "x": -86,
+            "y": 2
+          },
+          {
+            "x": -50,
+            "y": 2
+          },
+          {
+            "x": -46,
+            "y": -8.8
+          },
+          {
+            "x": 2,
+            "y": -8.7
+          },
+          {
+            "x": 10,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 90,
+        "period": 95,
+        "depth": 45,
+        "fade_in": 37,
+        "fade_out": 15,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 12,
+        "rand_period": 20,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N1 (VV) N2",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ],
+      "delta_proxima_min": 2,
+      "delta_proxima_max": 6
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -90,
+            "y": 0
+          },
+          {
+            "x": -86,
+            "y": 2
+          },
+          {
+            "x": -50,
+            "y": 2
+          },
+          {
+            "x": -46,
+            "y": -8.8
+          },
+          {
+            "x": 2,
+            "y": -8.7
+          },
+          {
+            "x": 10,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 90,
+        "period": 95,
+        "depth": 45,
+        "fade_in": 37,
+        "fade_out": 15,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 12,
+        "rand_period": 20,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N2 (VV) N-6",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ],
+      "delta_proxima_min": -12,
+      "delta_proxima_max": -6
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -90,
+            "y": 0
+          },
+          {
+            "x": -86,
+            "y": 2
+          },
+          {
+            "x": -50,
+            "y": 2
+          },
+          {
+            "x": -46,
+            "y": -20
+          },
+          {
+            "x": 0,
+            "y": -20
+          },
+          {
+            "x": 10,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 90,
+        "period": 95,
+        "depth": 45,
+        "fade_in": 37,
+        "fade_out": 15,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 12,
+        "rand_period": 20,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N2 (VV)",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ]
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -30,
+            "y": 5
+          },
+          {
+            "x": 30,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 90,
+        "period": 140,
+        "depth": 70,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 25,
+        "rand_period": 20,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N-24 (VV)",
+    "condicoes": {
+      "delta_anterior_min": -24,
+      "delta_anterior_max": -12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ]
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -30,
+            "y": 6.9
+          },
+          {
+            "x": 30,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 160,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 8,
+        "rand_period": 13,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "N-12+12 (VV)",
+    "condicoes": {
+      "delta_anterior_min": -12,
+      "delta_anterior_max": 12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "vogal"
+      ]
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -30,
+            "y": 5
+          },
+          {
+            "x": 30,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 45,
+        "period": 145,
+        "depth": 40,
+        "fade_in": 35,
+        "fade_out": 22,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 23,
+        "rand_period": 13,
+        "rand_length": 5
+      }
+    }
+  },
+  {
+    "nome": "R (NS) N0",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 480,
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -60,
+            "y": -20
+          },
+          {
+            "x": -30,
+            "y": -20
+          },
+          {
+            "x": 30,
+            "y": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "nome": "N0 (NS) N0",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 480,
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N0 (NS) N-2",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 480,
+      "fonemas_permitidos": [],
+      "delta_proxima_min": -6,
+      "delta_proxima_max": -2
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -51,
+            "y": 0
+          },
+          {
+            "x": -19,
+            "y": 19.9
+          },
+          {
+            "x": 6,
+            "y": 20.4
+          },
+          {
+            "x": 14,
+            "y": 9.4
+          },
+          {
+            "x": 31,
+            "y": 11.7
+          },
+          {
+            "x": 42,
+            "y": 5.3
+          },
+          {
+            "x": 60,
+            "y": 8.1
+          },
+          {
+            "x": 78,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 87,
+        "period": 180,
+        "depth": 55,
+        "fade_in": 0,
+        "fade_out": 33,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N0 (NS) R",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 480,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -93,
+            "y": 0
+          },
+          {
+            "x": -43,
+            "y": 7.9
+          },
+          {
+            "x": -36,
+            "y": -9.2
+          },
+          {
+            "x": -16,
+            "y": -5.3
+          },
+          {
+            "x": -7,
+            "y": -9.3
+          },
+          {
+            "x": -2,
+            "y": 0
+          },
+          {
+            "x": 130,
+            "y": 0
+          },
+          {
+            "x": 186,
+            "y": -12
+          },
+          {
+            "x": 240,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 2,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N2 (NS) R",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 480,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 3,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N-2 (NS) R",
+    "condicoes": {
+      "delta_anterior_min": -6,
+      "delta_anterior_max": -2,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 480,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 4,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "R (NS) R",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": true,
+      "length_min": 480,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 5,
+        "rand_pbw": 11,
+        "pontos": [
+          {
+            "x": -75,
+            "y": 0
+          },
+          {
+            "x": -38,
+            "y": -19.9
+          },
+          {
+            "x": 31,
+            "y": -20.4
+          },
+          {
+            "x": 80,
+            "y": -9.3
+          },
+          {
+            "x": 138,
+            "y": -19.3
+          },
+          {
+            "x": 185,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 88,
+        "period": 105,
+        "depth": 55,
+        "fade_in": 14,
+        "fade_out": 80,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 3,
+        "rand_period": 4,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "R (NC) N0",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 240,
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-120",
+        "PBW": "150,45",
+        "PBY": "15,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "84,220,40,18,32,0,0"
+      }
+    }
+  },
+  {
+    "nome": "N2 (NC) N-2",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240,
+      "fonemas_permitidos": [
+        "cv_plosivo"
+      ],
+      "delta_proxima_min": -6,
+      "delta_proxima_max": -2
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -90,
+            "y": 0
+          },
+          {
+            "x": -27,
+            "y": 18.1
+          },
+          {
+            "x": 28,
+            "y": 17.7
+          },
+          {
+            "x": 57,
+            "y": -7.6
+          },
+          {
+            "x": 91,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 95,
+        "depth": 60,
+        "fade_in": 0,
+        "fade_out": 68,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N-2 (NC) N2",
+    "condicoes": {
+      "delta_anterior_min": -6,
+      "delta_anterior_max": -2,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240,
+      "fonemas_permitidos": [
+        "cv_plosivo",
+        "cv_nao_plosivo"
+      ],
+      "delta_proxima_min": 2,
+      "delta_proxima_max": 6
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -120,
+            "y": 0
+          },
+          {
+            "x": -30,
+            "y": -21.6
+          },
+          {
+            "x": -7,
+            "y": -17.8
+          },
+          {
+            "x": 18,
+            "y": 10.2
+          },
+          {
+            "x": 44,
+            "y": 4.6
+          },
+          {
+            "x": 67,
+            "y": 5.1
+          },
+          {
+            "x": 80,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N-24 (N) R",
+    "condicoes": {
+      "delta_anterior_min": -24,
+      "delta_anterior_max": -12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-90",
+        "PBW": "45,20",
+        "fator_pby": -12
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "96,120,85,45,0,25,5"
+      }
+    }
+  },
+  {
+    "nome": "R (N) R",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 31,
+        "rand_pbw": 28,
+        "pontos": [
+          {
+            "x": -50,
+            "y": 20
+          },
+          {
+            "x": 10,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 205,
+        "depth": 40,
+        "fade_in": 0,
+        "fade_out": 0,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 20,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "R (N) N12",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "delta_proxima_min": 6,
+      "delta_proxima_max": 12
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-32",
+        "PBW": "20,40",
+        "PBY": "20,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "0,40,5,0,0,0,0"
+      }
+    }
+  },
+  {
+    "nome": "N24 (NC)",
+    "condicoes": {
+      "delta_anterior_min": 12,
+      "delta_anterior_max": 24,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "PBS_base": "-50",
+        "PBW": "39,35",
+        "fator_pby": -3.2
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N12 (N) N0",
+    "condicoes": {
+      "delta_anterior_min": 6,
+      "delta_anterior_max": 12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "cv_plosivo",
+        "cv_nao_plosivo"
+      ],
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -4,
+            "y": -11.3
+          },
+          {
+            "x": 1,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N-12 (N) N0",
+    "condicoes": {
+      "delta_anterior_min": -12,
+      "delta_anterior_max": -6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [
+        "cv_plosivo",
+        "cv_nao_plosivo"
+      ],
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "PBS_base": "-40",
+        "PBW": "21,20",
+        "fator_pby": -5
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N12 (N) R",
+    "condicoes": {
+      "delta_anterior_min": 6,
+      "delta_anterior_max": 12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-30",
+        "PBW": "50,40",
+        "PBY": "-70,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,140,70,20,0,40,0"
+      }
+    }
+  },
+  {
+    "nome": "N-12 (N) R",
+    "condicoes": {
+      "delta_anterior_min": -12,
+      "delta_anterior_max": -6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "40",
+        "PBW": "45,25",
+        "fator_pby": -2
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "78,220,45,34,9,0,0"
+      }
+    }
+  },
+  {
+    "nome": "N-1 (N) + R",
+    "condicoes": {
+      "delta_anterior_min": -1,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-50",
+        "PBW": "45,40",
+        "PBY": "10,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "31,180,120,90,5,10,95"
+      }
+    }
+  },
+  {
+    "nome": "N1 (N) R",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 120
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-50",
+        "PBW": "45,40",
+        "PBY": "-10,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "28,130,140,90,36,310,0"
+      }
+    }
+  },
+  {
+    "nome": "N0 (N) N-2",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [],
+      "delta_proxima_min": -6,
+      "delta_proxima_max": -2
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 30,
+        "period": 140,
+        "depth": 20,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 2,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "R (N) N-12",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "delta_proxima_min": -6,
+      "delta_proxima_max": -12
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-32",
+        "PBW": "20,40",
+        "PBY": "20,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "0,40,5,0,0,0,0"
+      }
+    }
+  },
+  {
+    "nome": "R (N) N0",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-110",
+        "PBW": "120,45",
+        "PBY": "15,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "0,40,5,0,0,0,0"
+      }
+    }
+  },
+  {
+    "nome": "NX (N) N-1",
+    "condicoes": {
+      "delta_anterior_min": -12,
+      "delta_anterior_max": 12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": [],
+      "delta_proxima_min": -1,
+      "delta_proxima_max": -1
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "PBS_base": "-110",
+        "PBW": "19,24",
+        "fator_pby": 2
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N-2 (NS)",
+    "condicoes": {
+      "delta_anterior_min": -6,
+      "delta_anterior_max": -2,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 480,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N2 (NS)",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 480,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N24 (NC)",
+    "condicoes": {
+      "delta_anterior_min": 12,
+      "delta_anterior_max": 24,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-110",
+        "PBW": "65,45",
+        "fator_pby": 1
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,110,40,10,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "N-2 (NC)",
+    "condicoes": {
+      "delta_anterior_min": -6,
+      "delta_anterior_max": -2,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240,
+      "fonemas_permitidos": [
+        "cv_plosivo",
+        "cv_nao_plosivo"
+      ]
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": []
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 1,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N2 (NC)",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240,
+      "fonemas_permitidos": [
+        "cv_plosivo",
+        "cv_nao_plosivo"
+      ]
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": -85,
+            "y": 13
+          },
+          {
+            "x": -53,
+            "y": -5
+          },
+          {
+            "x": -35,
+            "y": 0
+          },
+          {
+            "x": 24,
+            "y": -0.3
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 0,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N1 (NC)",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 240
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-60",
+        "PBW": "30,20",
+        "PBY": "-30,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "100,110,40,10,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "N-24 (N)",
+    "condicoes": {
+      "delta_anterior_min": -24,
+      "delta_anterior_max": -12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-40",
+        "PBW": "35,25",
+        "fator_pby": -10
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "100,130,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "N12 (N)",
+    "condicoes": {
+      "delta_anterior_min": 6,
+      "delta_anterior_max": 12,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0,
+      "fonemas_permitidos": []
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "pontos": [
+          {
+            "x": 0,
+            "y": -20
+          },
+          {
+            "x": 10,
+            "y": -20
+          },
+          {
+            "x": 30,
+            "y": 0
+          }
+        ]
+      },
+      "vibrato": {
+        "length": 60,
+        "period": 140,
+        "depth": 30,
+        "fade_in": 20,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 12,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  },
+  {
+    "nome": "N-12 (N)",
+    "condicoes": {
+      "delta_anterior_min": -12,
+      "delta_anterior_max": -6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-110",
+        "PBW": "45,35",
+        "PBY": "60,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,120,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "N1 (N)",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-90",
+        "PBW": "40,30",
+        "PBY": "0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "80,140,30,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "N0 (N)",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "PBS": "-10",
+        "PBW": "15,10",
+        "PBY": "3,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "100,140,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "R (N)",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "fixo",
+        "rand_pbs": 0,
+        "rand_pbw": 0,
+        "PBS": "-20",
+        "PBW": "25,20",
+        "PBY": "0,0"
+      },
+      "vibrato": {
+        "length": 80,
+        "period": 140,
+        "depth": 25,
+        "fade_in": 39,
+        "fade_out": 5,
+        "phase": 0,
+        "offset": 0,
+        "rand_depth": 23,
+        "rand_period": 0,
+        "rand_length": 0
+      }
+    }
+  }
+]

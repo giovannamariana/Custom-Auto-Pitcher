@@ -1,0 +1,1 @@
+Sucesso: O plugin rodou e salvou o arquivo em shift_jis sem erros!

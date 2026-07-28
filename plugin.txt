@@ -1,0 +1,2 @@
+name=CustomAutoPitcher 1.0.3
+execute=run.sh

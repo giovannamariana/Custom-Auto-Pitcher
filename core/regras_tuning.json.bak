@@ -1,0 +1,435 @@
+[
+  {
+    "nome": "silencio antes e depois",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-32",
+        "PBW": "20,40",
+        "PBY": "15,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "60,70,80,90,12,10,0"
+      }
+    }
+  },
+  {
+    "nome": "Início de Frase (Vindo de Silêncio)",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": true,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-20",
+        "PBW": "25,20",
+        "PBY": "0,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "80,140,30,40,5,0,0"
+      }
+    }
+  },
+  {
+    "nome": "notas iguais longo",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 480
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-60",
+        "PBW": "55,40",
+        "PBY": "8,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,140,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "nota longa e silencio",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 480
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-60",
+        "PBW": "45,20",
+        "PBY": "8,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "95,90,40,20,55,40,0"
+      }
+    }
+  },
+  {
+    "nome": "nota longa pequeno salto de baixo pra cima e silencio",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 3,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 480
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-10",
+        "PBW": "55,30",
+        "PBY": "-25,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "80,150,40,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "nota longa pequeno salto de cima pra baixo e silencio",
+    "condicoes": {
+      "delta_anterior_min": -3,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 480
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-90",
+        "PBW": "55,30",
+        "PBY": "35,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "95,90,40,20,55,40,0"
+      }
+    }
+  },
+  {
+    "nome": "pequeno salto de baixo pra cima (Longo)",
+    "condicoes": {
+      "delta_anterior_min": 2,
+      "delta_anterior_max": 6,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 400
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-10",
+        "PBW": "45,10",
+        "PBY": "-20,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,110,40,10,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Anterior baixa, atual igual à posterior",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 12,
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-40",
+        "PBW": "35,20",
+        "PBY": "-15,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,130,30,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Salto Grande Vindo de Baixo para Silêncio",
+    "condicoes": {
+      "delta_anterior_min": 5,
+      "delta_anterior_max": 9,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-30",
+        "PBW": "50,40",
+        "PBY": "-70,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,140,70,20,0,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Salto Descendente Vindo de Cima",
+    "condicoes": {
+      "delta_anterior_min": -4,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-50",
+        "PBW": "65,35",
+        "PBY": "30,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,140,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Salto GRANDE Descendente Vindo de Cima",
+    "condicoes": {
+      "delta_anterior_min": -12,
+      "delta_anterior_max": -4,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-110",
+        "PBW": "45,35",
+        "PBY": "60,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,120,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "nota pequena pequeno salto de baixo pra cima e silencio",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 3,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-10",
+        "PBW": "45,10",
+        "PBY": "-20,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "30,180,120,90,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "nota pequena pequeno salto de cima pra baixo e silencio",
+    "condicoes": {
+      "delta_anterior_min": -3,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-45",
+        "PBW": "40,25",
+        "PBY": "30,0"
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "30,180,120,90,5,10,0"
+      }
+    }
+  },
+  {
+    "nome": "pequeno salto de baixo pra cima notinha",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 4,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-60",
+        "PBW": "30,20",
+        "PBY": "-30,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "100,110,40,10,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "super salto de baixo pra cima notinha",
+    "condicoes": {
+      "delta_anterior_min": 6,
+      "delta_anterior_max": 20,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-90",
+        "PBW": "40,30",
+        "PBY": "-95,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "100,110,40,10,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "notas iguais",
+    "condicoes": {
+      "delta_anterior_min": 0,
+      "delta_anterior_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "PBS": "-10",
+        "PBW": "15,10",
+        "PBY": "3,0"
+      },
+      "vibrato": {
+        "ativado": false,
+        "config": "100,140,20,20,5,40,0"
+      }
+    }
+  },
+
+  {
+    "//": "valores meio universais"
+  },
+
+  {
+    "nome": "Anterior baixa, atual igual à posterior (Universal)",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 12,
+      "delta_proxima_min": 0,
+      "delta_proxima_max": 0,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-40",
+        "PBW": "35,20",
+        "fator_pby": -6.5
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,130,30,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Salto Ascendente Universal (Vindo de Baixo)",
+    "condicoes": {
+      "delta_anterior_min": 1,
+      "delta_anterior_max": 24,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-50",
+        "PBW": "45,25",
+        "fator_pby": -2.0
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,110,40,10,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Salto Descendente Universal (Vindo de Cima)",
+    "condicoes": {
+      "delta_anterior_min": -24,
+      "delta_anterior_max": -1,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": false,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-70",
+        "PBW": "55,35",
+        "fator_pby": -7.5
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "100,130,20,20,5,40,0"
+      }
+    }
+  },
+  {
+    "nome": "Salto para Silêncio Posterior Universal",
+    "condicoes": {
+      "delta_anterior_min": -24,
+      "delta_anterior_max": 24,
+      "anterior_e_silencio": false,
+      "proxima_e_silencio": true,
+      "length_min": 0
+    },
+    "efeitos": {
+      "portamento": {
+        "tipo": "proporcional",
+        "PBS_base": "-40",
+        "PBW": "45,20",
+        "fator_pby": -6.0
+      },
+      "vibrato": {
+        "ativado": true,
+        "config": "95,120,40,20,25,40,0"
+      }
+    }
+  }
+]
