@@ -50,10 +50,13 @@ Precisa colocar dentro da pasta plugins do OpenUtau
 
 1. Precisa colocar dentro da pasta plugins do OpenUtau
 /home/USUÁRIO/.local/share/OpenUtau/Plugins/CustomAutoPitcher (para linux)
+
 <img width="712" height="739" alt="Captura_de_tela_20260728_131256" src="https://github.com/user-attachments/assets/8cc9180e-4fdf-41ec-bd2d-b398a8917c25" />
 
 Para Windows, precisa ir nesse arquivo e mudar de run.sh -> run.bat
+
 <img width="256" height="57" alt="1" src="https://github.com/user-attachments/assets/34845c63-ac8e-4243-9ff6-01b75687f17e" />
+
 <img width="377" height="132" alt="2" src="https://github.com/user-attachments/assets/14c69436-248f-4a52-ba78-da2e37a0e657" />
 
 2. **Iniciar editor**
@@ -73,6 +76,7 @@ Para Windows, precisa ir nesse arquivo e mudar de run.sh -> run.bat
 4. Exportar: Clique em salvar/exportar para gerar seu arquivo de regras em .json pronto para ser processado pela engine.
 
 <img width="1621" height="1008" alt="Captura_de_tela_20260728_131213" src="https://github.com/user-attachments/assets/8518fc5c-41de-40b9-96b2-efca3731e4d2" />
+
 <img width="829" height="903" alt="Captura_de_tela_20260728_131316" src="https://github.com/user-attachments/assets/3d6146e9-bf3d-4ded-968a-bb08db76f206" />
 
 
