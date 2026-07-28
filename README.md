@@ -73,7 +73,8 @@ Para Windows, precisa ir nesse arquivo e mudar de run.sh -> run.bat
 3. Configurar Efeitos:
 - Portamento: Escolha entre o modo Proporcional ou adicione Pontos Fixos personalizados no gráfico. (tem configurações de randomizers!)
 - Vibrato: Ajuste tamanho, período, profundidade, fade-in/out e oscilações. (tem configurações de randomizer!)
-4. Exportar: Clique em salvar/exportar para gerar seu arquivo de regras em .json pronto para ser processado pela engine.
+- 4. DUPLO CLIQUE para adicionar ponto ou remover ponto (versão 1.0.3!!!)
+5. Exportar: Clique em salvar/exportar para gerar seu arquivo de regras em .json pronto para ser processado pela engine.
 
 <img width="1621" height="1008" alt="Captura_de_tela_20260728_131213" src="https://github.com/user-attachments/assets/8518fc5c-41de-40b9-96b2-efca3731e4d2" />
 
